@@ -1,0 +1,21 @@
+<div class="add-products">
+  <h2>Product Add</h2>
+  <div class="detail">
+    <label>Product Name:
+      <input [(ngModel)]="productData.prod_name" placeholder="Product Name"/>
+    </label><br>
+    <label>Product Desc:
+      <input [(ngModel)]="productData.prod_desc" placeholder="Product Description"/>
+    </label><br>
+    <label>Product Price:
+      <input [(ngModel)]="productData.prod_price" placeholder="Product Price"/>
+    </label><br>
+  </div>
+  <div class="button-wrapper">
+    <button routerLink="/products">
+      Back to Home
+    </button>
+    <button (click)="addProduct()">Save</button>
+  </div>
+
+</div>
